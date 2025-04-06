@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../data/workout_parser.dart'; // To load data
 import '../models/workout_level.dart';
-import '../models/workout_day.dart';
 import './exercise_screen.dart'; // To navigate to workout
 import './rest_day_screen.dart'; // To navigate to rest day
 
@@ -14,8 +13,6 @@ String _getDisplayLevelName(WorkoutLevelType levelType) {
       return 'Steady Rhythm'; // Meditative name for Intermediate
     case WorkoutLevelType.advanced:
       return 'Full Power'; // Meditative name for Advanced
-    default:
-      return 'Workout'; // Fallback
   }
 }
 
@@ -96,8 +93,8 @@ class _DaySelectionScreenState extends State<DaySelectionScreen> {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
-              colorScheme.primary.withOpacity(0.05),
-              colorScheme.secondary.withOpacity(0.1),
+              colorScheme.primary.withAlpha((255 * 0.05).round()),
+              colorScheme.secondary.withAlpha((255 * 0.1).round()),
             ],
           ),
         ),
@@ -143,8 +140,8 @@ class _DaySelectionScreenState extends State<DaySelectionScreen> {
                             color:
                                 day.isRestDay
                                     ? Colors.grey.shade300
-                                    : colorScheme.primaryContainer.withOpacity(
-                                      0.8,
+                                    : colorScheme.primaryContainer.withAlpha(
+                                      (255 * 0.8).round(),
                                     ),
                             borderRadius: BorderRadius.circular(8.0),
                           ),

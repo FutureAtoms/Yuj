@@ -55,9 +55,9 @@ class GymApp extends StatelessWidget {
               const Shadow(blurRadius: 1.0, color: Colors.black38),
             ], // Consistent shadow
           ),
-          backgroundColor: Colors.deepPurpleAccent.withOpacity(
-            0.9,
-          ), // Slightly transparent
+          backgroundColor: Colors.deepPurpleAccent.withAlpha(
+            (255 * 0.9).round(),
+          ), // Use withAlpha instead of withOpacity
           foregroundColor: Colors.white,
           elevation: 0,
           centerTitle: true,
@@ -119,7 +119,9 @@ class GymApp extends StatelessWidget {
         // Define Input Decoration Theme for TextFields (AuthScreen)
         inputDecorationTheme: InputDecorationTheme(
           filled: true,
-          fillColor: Colors.white.withOpacity(0.8),
+          fillColor: Colors.white.withAlpha(
+            (255 * 0.8).round(),
+          ), // Use withAlpha
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12.0),
             borderSide: BorderSide.none, // No border needed if filled
@@ -131,20 +133,28 @@ class GymApp extends StatelessWidget {
           labelStyle: baseTextTheme.bodyMedium?.copyWith(
             color: Colors.grey[700],
           ),
-          prefixIconColor: Colors.deepPurple.withOpacity(0.8),
+          prefixIconColor: Colors.deepPurple.withAlpha(
+            (255 * 0.8).round(),
+          ), // Use withAlpha
         ),
 
         // Define ChoiceChip theme (Questionnaire/AuthScreen)
         chipTheme: ChipThemeData(
-          backgroundColor: Colors.deepPurple.withOpacity(0.05),
-          selectedColor: Colors.deepPurple.withOpacity(0.8),
+          backgroundColor: Colors.deepPurple.withAlpha(
+            (255 * 0.05).round(),
+          ), // Use withAlpha
+          selectedColor: Colors.deepPurple.withAlpha(
+            (255 * 0.8).round(),
+          ), // Use withAlpha
           labelStyle: baseTextTheme.bodyMedium, // Lato for chip text
           secondaryLabelStyle: baseTextTheme.bodyMedium?.copyWith(
             color: Colors.white,
           ), // Text color when selected
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(8.0),
-            side: BorderSide(color: Colors.deepPurple.withOpacity(0.2)),
+            side: BorderSide(
+              color: Colors.deepPurple.withAlpha((255 * 0.2).round()),
+            ), // Use withAlpha
           ),
           selectedShadowColor: Colors.black26,
           elevation: 1,

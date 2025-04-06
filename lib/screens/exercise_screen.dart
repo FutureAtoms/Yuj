@@ -2,9 +2,10 @@ import 'dart:async'; // For Timer
 import 'dart:ui' as ui; // For ImageFilter (blur)
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart'; // Import Lottie
-import 'package:supabase_flutter/supabase_flutter.dart'; // Needed?
+// Needed?
 import '../models/workout_day.dart';
 import '../models/exercise.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class ExerciseScreen extends StatefulWidget {
   final WorkoutDay workoutDay;

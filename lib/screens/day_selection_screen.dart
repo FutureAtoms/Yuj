@@ -84,6 +84,7 @@ class _DaySelectionScreenState extends State<DaySelectionScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('$displayLevelName - Select Day'),
+        backgroundColor: colorScheme.primary, // Match button color
         // Theme handles styling
       ),
       body: Container(

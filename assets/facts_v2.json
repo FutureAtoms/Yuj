@@ -1,0 +1,155 @@
+{
+    "healthFacts": [
+      {
+        "statement": "Healthy eating in midlife (rich in fruits, vegetables, whole grains, healthy fats) significantly increases the likelihood of healthy aging free from major chronic diseases.",
+        "source": "Nature Medicine (Study published March 2025)"
+      },
+      {
+        "statement": "Higher intake of ultra-processed foods is linked to increased risk of over 30 adverse health outcomes, including heart disease, mental health disorders, type 2 diabetes, and early death.",
+        "source": "The BMJ (British Medical Journal - based on large reviews/studies)"
+      },
+      {
+        "statement": "Inadequate sleep duration and disruptions are linked to an increased risk of dementia, obesity, diabetes, and cardiovascular disease.",
+        "source": "General Medical Consensus / Multiple Sleep Research Studies"
+      },
+      {
+        "statement": "Lifestyle and environmental factors (like diet, exercise, smoking, socioeconomic status) have a substantially greater influence on the risk of premature death than genetic predispositions.",
+        "source": "Nature Medicine (UK Biobank study analysis, published Feb 2025)"
+      },
+      {
+        "statement": "Strong social connections are associated with increased longevity, reduced disability rates, and better mental health, highlighting the health impact of relationships.",
+        "source": "General Consensus in Social Epidemiology / Harvard Study of Adult Development"
+      },
+      {
+        "statement": "Social isolation and loneliness are linked to poorer health outcomes and an increased risk of premature mortality, comparable to risks like smoking or obesity.",
+        "source": "Meta-analyses published in journals like Perspectives on Psychological Science"
+      },
+      {
+        "statement": "Microplastics and nanoplastics have been detected in human arterial plaque and are potentially linked to a significantly higher risk of heart attack, stroke, or death.",
+        "source": "New England Journal of Medicine (NEJM - study published March 2024)"
+      },
+      {
+        "statement": "Aiming for around 10,000 steps per day is associated with a significantly lower risk of dementia (up to 50% reduction), cardiovascular disease, and certain cancers.",
+        "source": "JAMA Neurology / JAMA Internal Medicine (Studies published Sept 2022)"
+      },
+      {
+        "statement": "Mindfulness-based interventions like meditation can measurably change brain structure and function, reducing stress, anxiety, and improving emotional regulation.",
+        "source": "American Psychological Association / Multiple Neuroscience studies (e.g., published in journals like NeuroImage, Frontiers)"
+      },
+       {
+        "statement": "A predominantly plant-based diet (more whole grains, fruits, vegetables, nuts, legumes; less animal foods, refined grains, added sugars) is recommended for both human health and environmental sustainability.",
+        "source": "The EAT-Lancet Commission on Food, Planet, Health"
+      }
+    ],
+    "healthMyths": [
+      {
+        "myth": "You must drink eight glasses of water a day.",
+        "fact": "Individual hydration needs vary based on factors like activity, climate, and health. Total water intake includes water from food and other beverages.",
+        "source": "National Academies of Sciences, Engineering, and Medicine"
+      },
+      {
+        "myth": "Targeted exercises can eliminate belly fat (spot reduction).",
+        "fact": "Fat loss occurs throughout the body due to an overall calorie deficit created by diet and exercise; you can't choose where fat is lost first.",
+        "source": "American Council on Exercise (ACE) / Exercise Physiology Principles"
+      },
+      {
+        "myth": "Detox diets effectively remove toxins from the body.",
+        "fact": "The liver, kidneys, lungs, and skin are the body's natural detoxification systems. Detox diets lack scientific evidence and can sometimes be harmful.",
+        "source": "National Center for Complementary and Integrative Health (NCCIH) / Registered Dietitian Consensus"
+      },
+      {
+        "myth": "Cracking your knuckles causes arthritis.",
+        "fact": "The sound is likely from gas bubbles forming or collapsing in joint fluid. Decades of research, including long-term studies, show no link between knuckle cracking and arthritis.",
+        "source": "Multiple studies / Medical Consensus (e.g., research published in Journal of the American Board of Family Medicine, anecdotal evidence like Dr. Donald Unger's self-experiment)"
+      },
+      {
+        "myth": "Organic foods are always nutritionally superior to conventional foods.",
+        "fact": "Evidence doesn't strongly support consistent nutritional superiority. Organic foods have lower pesticide residues and may have higher levels of certain antioxidants, but nutrient content varies widely based on many factors.",
+        "source": "Reviews published in Annals of Internal Medicine / Stanford University research summaries"
+      },
+      {
+        "myth": "Most body heat is lost through the head.",
+        "fact": "Heat loss is roughly proportional to the exposed surface area of the body. You lose heat from any uncovered part, not disproportionately from the head.",
+        "source": "The BMJ (British Medical Journal) / Basic Physiology Principles"
+      },
+      {
+        "myth": "Antiperspirants cause breast cancer.",
+        "fact": "Scientific evidence from major organizations like the National Cancer Institute (NCI) and the American Cancer Society (ACS) has consistently shown no link.",
+        "source": "National Cancer Institute (NCI) / American Cancer Society (ACS)"
+      },
+      {
+        "myth": "Eggs are bad for heart health for most healthy individuals.",
+        "fact": "Moderate egg consumption (e.g., up to one per day) is not linked to increased heart disease risk for most people, as dietary cholesterol has less impact on blood cholesterol than previously thought.",
+        "source": "Harvard T.H. Chan School of Public Health / American Heart Association (AHA) guidelines"
+      },
+      {
+        "myth": "Sugar causes hyperactivity in children.",
+        "fact": "Multiple double-blind, placebo-controlled studies have refuted this belief. Hyperactivity at events with sugary foods is more likely due to the exciting environment.",
+        "source": "Meta-analyses published in JAMA / Studies in New England Journal of Medicine"
+      },
+      {
+        "myth": "Vaccines cause autism.",
+        "fact": "This has been thoroughly debunked by numerous large-scale, high-quality studies worldwide. The original study suggesting a link was fraudulent and retracted.",
+        "source": "Centers for Disease Control and Prevention (CDC) / World Health Organization (WHO) / Studies published in Annals of Internal Medicine, JAMA, The Lancet"
+      },
+      {
+        "myth": "Vaccines cause autoimmune diseases.",
+        "fact": "There is no credible scientific evidence supporting this claim. Vaccines actually prevent infections that could potentially trigger autoimmune conditions in susceptible individuals.",
+        "source": "Centers for Disease Control and Prevention (CDC) / Autoimmune Registry Inc."
+      }
+    ],
+    "healthQuotes": [
+      {
+        "quote": "It is health that is real wealth and not pieces of gold and silver.",
+        "author": "Mahatma Gandhi"
+      },
+      {
+        "quote": "The greatest wealth is health.",
+        "author": "Virgil"
+      },
+      {
+        "quote": "Let thy food be thy medicine and thy medicine be thy food.",
+        "author": "Hippocrates"
+      },
+      {
+        "quote": "Walking is man's best medicine.",
+        "author": "Hippocrates"
+      },
+      {
+        "quote": "A calm mind brings inner strength and self-confidence, so that's very important for good health.",
+        "author": "Dalai Lama"
+      },
+      {
+         "quote": "Happiness is the highest form of health.",
+        "author": "Dalai Lama"
+      },
+      {
+        "quote": "Our bodies are our gardens – our wills are our gardeners.",
+        "author": "William Shakespeare"
+      },
+      {
+        "quote": "To keep the body in good health is a duty… otherwise we shall not be able to keep the mind strong and clear.",
+        "author": "Buddha"
+      },
+      {
+        "quote": "The ability to be in the present moment is a major component of mental wellness.",
+        "author": "Abraham Maslow"
+      },
+       {
+        "quote": "Natural forces within us are the true healers of disease.",
+        "author": "Hippocrates"
+      },
+       {
+        "quote": "The groundwork for all happiness is health.",
+        "author": "Leigh Hunt"
+      },
+      {
+        "quote": "Your vision will become clear only when you look into your heart. Who looks outside, dreams. Who looks inside, awakens.",
+        "author": "Dr. Carl Jung"
+      },
+      {
+        "quote": "Out of your vulnerabilities will come your strength.",
+        "author": "Dr. Sigmund Freud"
+      }
+    ]
+  }

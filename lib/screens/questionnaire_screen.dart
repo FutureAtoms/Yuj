@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-import '../main.dart'; // Access supabase
+import '../main.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import '../screens/home_screen.dart'; // Navigate to home after completion
 import './day_selection_screen.dart';
 import '../models/workout_level.dart';
 import '../utils/helpers.dart';
@@ -104,8 +106,14 @@ class _QuestionnaireScreenState extends State<QuestionnaireScreen> {
           .from('profiles')
           .update({
             'assigned_level': determinedLevel.name,
+            'questionnaire_completed': true, // Mark as completed in Supabase
           }) // Store enum name as string
           .eq('id', userId);
+
+      // Also save completion status locally
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setBool('questionnaireCompleted', true);
+      await prefs.setString('selectedLevel', determinedLevel.name);
 
       if (mounted) {
         showSnackBar(context, 'Got it! Finding the best plan for you...');
@@ -122,12 +130,13 @@ class _QuestionnaireScreenState extends State<QuestionnaireScreen> {
         );
       }
     } catch (e) {
-      if (mounted)
+      if (mounted) {
         showSnackBar(
           context,
           'Error saving answers: ${e.toString()}',
           isError: true,
         );
+      }
     } finally {
       if (mounted) setState(() => _isLoading = false);
     }
@@ -149,7 +158,7 @@ class _QuestionnaireScreenState extends State<QuestionnaireScreen> {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              colorScheme.background,
+              colorScheme.surface,
               colorScheme.primary.withOpacity(0.1),
             ],
           ),
@@ -188,7 +197,7 @@ class _QuestionnaireScreenState extends State<QuestionnaireScreen> {
                 Text(
                   '${index + 1}. ${question.text}',
                   style: theme.textTheme.titleLarge?.copyWith(
-                    color: colorScheme.onBackground.withOpacity(0.9),
+                    color: colorScheme.onSurface.withOpacity(0.9),
                   ),
                 ),
                 const SizedBox(height: 12),
